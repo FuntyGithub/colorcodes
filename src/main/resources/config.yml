@@ -20,13 +20,13 @@ Settings:
 
   #Schould colorcodes be enabled in chat? [true/false]
   InChat: 'true'
-    #what permissions need the Player to use this? leave blank if no permissions should be required.
-    Permissions: ''
+  #what permissions need the Player to use this? leave blank if no permissions should be required.
+  PermissionsChat: ''
 
   #Schould colorcodes be enabled at signs? [true/false]
   AtSigns: 'true'
-    #what permissions need the Player to use this? leave blank if no permissions should be required.
-    Permissions: ''
+  #what permissions need the Player to use this? leave blank if no permissions should be required.
+  PermissionsSign: ''
 
 Messages:
   #The message that will show if a player has no permissions for something. [You can use colors with "&"]
