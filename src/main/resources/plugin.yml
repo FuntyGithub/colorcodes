@@ -1,0 +1,6 @@
+name: Colorcodes
+version: ${project.version}
+main: org.funty.colorcodes.Main
+api-version: 1.17
+authors: [Funty]
+description: Allows you to use colorcodes
