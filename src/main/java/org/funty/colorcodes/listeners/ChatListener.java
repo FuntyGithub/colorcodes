@@ -12,7 +12,7 @@ public class ChatListener implements Listener {
     public void OnChat(AsyncPlayerChatEvent e){
         Player p = e.getPlayer();
         if(Main.getPlugin().getConfig().getString("Settings.InChat").equals("true")){
-            if(Main.getPlugin().getConfig().getString("Settings.InChat.PermissionsChat") == null || p.hasPermission(Main.getPlugin().getConfig().getString("Settings.InChat.Permissions"))){
+            if(Main.getPlugin().getConfig().getString("Settings.InChat.PermissionsChat") == null || p.hasPermission(Main.getPlugin().getConfig().getString("Settings.InChat.PermissionsChat"))){
                 e.setMessage(e.getMessage().replace(Main.getPlugin().getConfig().getString("Settings.ColorCodeCharacter"), "§"));
             }else {
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.getPlugin().getConfig().getString("Messages.NoPerms")));
