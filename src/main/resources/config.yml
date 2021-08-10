@@ -28,6 +28,11 @@ Settings:
   #what permissions need the Player to use this? leave blank if no permissions should be required.
   PermissionsSign: ''
 
+  #what permissions need the Player to use this? leave blank if no permissions should be required.
+  PermissionsReload: ''
+
 Messages:
   #The message that will show if a player has no permissions for something. [You can use colors with "&"]
   NoPerms: '&7[&6ColorCodes&7] &cYou don´t have permissions to do this!'
+  #message that will be send if someone successfully used the reload command. [You can use colors with "&"]
+  Reloaded: '&7[&6ColorCodes&7] &creloaded!'

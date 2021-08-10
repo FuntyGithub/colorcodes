@@ -11,7 +11,7 @@ public class SignListener implements Listener {
     @EventHandler
     public void onSignChange(SignChangeEvent e) {
         Player p = e.getPlayer();
-        if(Main.getPlugin().getConfig().getString("Settings.InChat.PermissionsSign") == null || p.hasPermission(Main.getPlugin().getConfig().getString("Settings.InChat.PermissionsSign"))){
+        if(Main.getPlugin().getConfig().getString("Settings.PermissionsSign") == null || p.hasPermission(Main.getPlugin().getConfig().getString("Settings.PermissionsSign"))){
             String[] lines = e.getLines();
             for(int i = 0; i < 4; i++) {
                 String line = lines[ i ];

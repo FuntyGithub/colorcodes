@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.funty.colorcodes.commands.CCCommand;
 import org.funty.colorcodes.listeners.ChatListener;
 import org.funty.colorcodes.listeners.SignListener;
 
@@ -19,6 +20,9 @@ public final class Main extends JavaPlugin {
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new ChatListener(), this);
         pm.registerEvents(new SignListener(), this);
+        //commands
+        getCommand("cc").setExecutor(new CCCommand());
+        getCommand("cc").setTabCompleter(new TabComplete());
     }
 
     @Override
